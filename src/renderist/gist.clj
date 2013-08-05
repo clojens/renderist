@@ -55,7 +55,7 @@
         (l/warn "Got status <" (:status gist)  "> while accessing gist <" id ">")
         nil))))
 
-(def get-gist-cached (m/memo-lu get-gist 400))
+(def get-gist-cached (m/lu #(do (get-gist 6152163) (identity %))))
 
 (defn extract-file [gist name]
   ""

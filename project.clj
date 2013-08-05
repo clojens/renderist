@@ -1,4 +1,5 @@
 ;; Copyright 2012 Julien Eluard
+;; Updated 2013 Rob Jentzema
 ;;
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -14,20 +15,22 @@
 ;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ;;
 (defproject renderist "0.0.1"
-  :dependencies [[org.clojure/clojure "1.4.0"]
-                 [org.clojure/core.memoize "0.5.2"]
-                 [org.clojure/tools.logging "0.2.3"]
+  :dependencies [[org.clojure/clojure "1.5.1"]
+                 [org.clojure/core.memoize "0.5.6"]
+                 [org.clojure/tools.logging "0.2.6"]
                  [ring/ring-core "1.1.1"]
-                 [ring-server "0.2.5"]
-                 [compojure "1.1.1"]
+                 [ring-server "0.2.8"]
+                 [compojure "1.1.5"]
                  [ring-json-response "0.2.0"]
                  [net.sourceforge.plantuml/plantuml "7947"]
-                 [markdown-clj "0.9.8"]
-                 [clj-time "0.4.4"]
-                 [tentacles "0.2.4"]
-                 [enlive "1.0.1"]
-                 [environ "0.2.1"]
-                 [ring-mock "0.1.3"]]
+                 [markdown-clj "0.9.29"]
+                 [clj-time "0.5.1"]
+                 [tentacles "0.2.6"]
+                 [enlive "1.1.1"]
+                 [environ "0.4.0"]
+                 [thneed "1.0.0"]
+                 [ring-mock "0.1.5"]]
+  :main renderist.web
   :license {:name "GPL - v 3.0"
             :url "http://www.gnu.org/licenses/gpl-3.0.en.html"
             :distribution :repo}

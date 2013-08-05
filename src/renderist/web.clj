@@ -18,7 +18,7 @@
             [clojure.java.io :as io]
             [compojure.core :as c]
             [compojure.route :as r]
-            [markdown :as md]
+            [markdown.core :as md]
             [net.cgrand.enlive-html :as h]
             [renderist.api :as a]
             [renderist.gist :as g]
